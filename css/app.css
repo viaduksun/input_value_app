@@ -1,0 +1,139 @@
+.app {
+  background: rgb(230, 230, 230);
+  flex: 1 1 auto;
+  padding-top: 30px;
+}
+.app-block {
+  display: flex;
+  background: rgb(199, 199, 199);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507);
+}
+.app-block.top {
+  display: block;
+  /* background: rgb(199, 199, 199);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507); */
+}
+.comment {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.comment-format {
+  font-size: 16px;
+  color: rgb(105, 105, 105);
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+}
+.input {
+  outline: none;
+  padding: 10px;
+  padding-left: 20px;
+  border: 1px solid rgb(156, 156, 156);
+  min-height: 40px;
+  flex: 1 1 80%;
+}
+.input:focus {
+  box-shadow: 0 0 5px rgba(45, 125, 156, 0.6);
+}
+.input.error {
+  border: 1px solid rgb(255, 85, 85);
+  background: rgb(255, 197, 197);
+}
+.btn {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+  background: rgb(195, 231, 226);
+  border: 1px solid rgb(138, 138, 138);
+  transition: all 0.2s ease 0s;
+}
+.btn:hover {
+  background: rgb(156, 200, 194);
+}
+
+.field {
+  flex: 1 1 80%;
+  background: #fff;
+  min-height: 80px;
+  padding: 10px;
+  padding-left: 20px;
+  border: 1px solid rgb(156, 156, 156);
+}
+.field-heder {
+  border-bottom: 1px solid #000;
+  display: flex;
+  font-size: 12px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.field-heder-section.small {
+  flex: 1 1 10%;
+}
+.field-heder-section {
+  flex: 1 1 30%;
+}
+.item {
+  display: flex;
+  border-bottom: 1px solid rgb(207, 207, 207);
+  margin-bottom: 5px;
+}
+.sm {
+  flex: 1 1 10%;
+}
+.st {
+  flex: 1 1 30%;
+}
+.item-check {
+  flex: 1 1 10%;
+  width: 20px;
+  height: 20px;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 20%;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* ===MEDIA ================================= */
+@media screen and (max-width: 768px) {
+  .input,
+  .field {
+    flex: 1 1 70%;
+  }
+  .sidebar {
+    flex: 1 1 30%;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .app-block,
+  .form {
+    flex-direction: column;
+  }
+  .input-block {
+    padding: 15px;
+  }
+  .input {
+    margin-bottom: 10px;
+  }
+  .field {
+    margin-bottom: 10px;
+  }
+  .sidebar {
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/null.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Input-value</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <h1 class="header-title">Input-value-app</h1>
+        </div>
+      </header>
+      <div class="app">
+        <div class="container">
+          <div class="app-block top">
+            <p class="comment">
+              Please, enter your data in the following format:
+              <span class="comment-format"> string1=string2</span>
+            </p>
+
+            <form class="form">
+              <input type="text" class="input" id="input" />
+              <div class="sidebar">
+                <button type="submit" class="btn" id="addBtn">Add</button>
+              </div>
+            </form>
+          </div>
+          <div class="app-block">
+            <div class="field">
+              <!-- <div class="field-heder">
+                <span class="field-heder-section small">No</span>
+                <span class="field-heder-section">Name</span>
+                <span class="field-heder-section">Value</span>
+                <span class="field-heder-section small">Select</span>
+              </div>
+              <div class="field-body">
+                <div class="item">
+                  <span class="sm">1</span>
+                  <span class="st">Name</span>
+                  <span class="st">Value</span>
+                  <span class="sm">
+                    <input class="item-check" type="checkbox" />
+                  </span>
+                </div>
+              </div> -->
+            </div>
+            <div class="sidebar">
+              <button class="btn" id="btnSortName">Sort by name</button>
+              <button class="btn" id="btnSortValue">Sort by value</button>
+              <button class="btn" id="btnDeleteSelected">
+                Delete selected
+              </button>
+              <button class="btn" id="btnDeleteAll">Delete all</button>
+              <button class="btn" id="showXML">Show XML</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">Kyiv 2021</div>
+      </footer>
+    </div>
+    <!-- scripts  -->
+    <script src="js/Component.js"></script>
+    <script src="js/Modal.js"></script>
+    <script src="js/Field.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
